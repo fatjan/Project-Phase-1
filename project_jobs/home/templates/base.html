@@ -21,26 +21,21 @@
                 <div class="top_menu row m-0">
                     <div class="container">
                         <div class="float-left">
-                            <ul class="list header_social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
+            
                         </div>
                         <div class="float-right">
-                            <a class="dn_btn" href="tel:+4400123654896">+440 012 3654 896</a>
-                            <a class="dn_btn" href="mailto:support@colorlib.com">support@colorlib.com</a>
+                            <a class="dn_btn" href="tel:+4400123654896">+6221 5060 7 500</a>
+                            <a class="dn_btn" href="mailto:fatma.janna.utp@gmail.com">support@jobsdb.com</a>
                         </div>
                     </div>	
                 </div>
             </div>
             <div class="header-area blog-menu">
                 <div class="container">
-                    <div class="row">
+                    <div class="row mb-5" >
                         <div class="col-lg-2">
                             <div class="logo-area">
-                                <a href="index.html"><img src="{% static 'image/jobsdb.png' %}" alt="logo"></a>
+                                <!-- <a href="index.html"><img src="{% static 'image/jobs.png' %}" style="height: 30%; width: auto"></a> -->
                             </div>
                         </div>
                         <div class="col-lg-10">
@@ -51,9 +46,9 @@
                             </div>  
                             <div class="main-menu">
                                 <ul>
-                                    <li class="active"><a href="index.html">home</a></li>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="job-category.html">category</a></li>
+                                    <li class="active"><a href="{% url 'home' %}">home</a></li>
+                                    <li><a href="{% url 'about' %}">about us</a></li>
+                                    <li><a href="{% url 'category' %}">category</a></li>
                                     <li><a href="#">blog</a>
                                         <ul class="sub-menu">
                                             <li><a href="blog-home.html">Blog Home</a></li>
@@ -138,14 +133,18 @@
     </span>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="social-icons">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <div>
+                                <!-- <ul>
+                                    <li><a href="#"><img style="size: 50%" src="{% static 'image/ico-facebook@2x.png' %}"></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                     <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                </ul>
+                                </ul> -->
                             </div>
+                            <div class="float-right">
+                                    <a class="dn_btn" href="tel:+4400123654896">+6221 5060 7500</a><br>
+                                    <a class="dn_btn" href="mailto:fatma.janna.utp@gmail.com">support@jobsdb.com</a>
+                                </div>
                         </div>
                     </div>
                 </div>
