@@ -28,3 +28,4 @@ def job_new(request):
     else:
         form = JobForm()
     return render(request, 'employer_form.html', {'form': form})
+
