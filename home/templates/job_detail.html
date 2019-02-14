@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+<div class="row">
+        <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <img src="{{ job.logo_perusahaan.url }}" alt="" width="630px">
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <span>Nama Pekerjaan: 
+                        {{ job.job_name }} 
+                        </span><br>
+                        <span>Gaji: Rp
+                                {{ job.salary }} 
+                                </span>
+                    </div>  
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align: right;">     
+                        <span>    
+                            lokasi: {{ job.lokasi }} 
+                        </span>
+                    </div>
+                </div><br>
+                <h2>Industri/Bidang: {{ job.bidang }}</h2>
+                <p style="text-align: justify;">
+                       Deadline: {{ job.deadline }}
+                </p>
+                <p style="text-align: justify;">
+                        Date posted: {{ job.posted_at }}
+                 </p>
+                <p style="text-align: justify;">
+                        Deskripsi: {{ job.deskripsi }}
+                 </p>
+                <a href="{% url 'category' %}">Kembali ke Job Category</a>
+            </div>
+            <div class="col-lg-3 col-md-3"></div>        
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3"></div>
+    </div>
+{% endblock %}
