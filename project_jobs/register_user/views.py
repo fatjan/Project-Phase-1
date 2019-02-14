@@ -6,7 +6,7 @@ def form_register(request):
         form = DocumentForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('userreg')
     else:
         form = DocumentForm()
     return render(request, 'user_register.html', {
