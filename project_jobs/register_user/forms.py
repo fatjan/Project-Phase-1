@@ -1,8 +1,8 @@
 from django import forms
-from .models import user
+from .models import User
 
 
 class DocumentForm(forms.ModelForm):
     class Meta:
-        model = Document
-        fields = ('username', 'document', )
+        model = User
+        fields = ('username', 'password', 'nama', 'email', 'dokumen', )
